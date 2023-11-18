@@ -1,0 +1,13 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.connection.username">username</property>
+        <property name="hibernate.connection.password">password</property>
+        <property name="hibernate.show_sql">false</property>
+        <mapping class="pfe_broker.models.User" />
+        <mapping class="pfe_broker.models.Stock" />
+    </session-factory>
+</hibernate-configuration>
